@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mengenal komponen komputer dan cara kerjanya</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<div class="site">
+<header class="topbar"><div class="brand"><div class="brand-mark">PC</div><div><strong>KOMPONEN KOMPUTER</strong><span>MEDIA PEMBELAJARAN</span></div></div><div class="topbar-actions"><div class="top-note">PILIH KOMPONEN · <b>LIHAT DETAIL</b></div><button class="theme-toggle" id="themeToggle" type="button" aria-label="Ubah tema" aria-pressed="false">
+  <span class="theme-icon theme-icon-moon" aria-hidden="true">◐</span>
+  <span class="theme-word theme-word-dark">DARK</span>
+  <span class="theme-track" aria-hidden="true"><i class="theme-thumb"></i></span>
+  <span class="theme-word theme-word-light">LIGHT</span>
+  <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+</button></div></header>
+<section class="hero"><div><div class="eyebrow">MATERI KOMPONEN</div><h1>Mengenal <span class="highlight">komponen komputer</span><br>dan cara kerjanya</h1><p>Pilih komponen. Kartu akan bergerak ke tengah seperti perpindahan halaman pada video, lalu penjelasan komponen yang dipilih muncul di kartu yang sama.</p></div><div class="hero-side">SATU HALAMAN<br>SEMUA KOMPONEN<br>TANPA SLIDE BARU</div></section>
+<section class="stage-wrap"><div class="stage" id="stage"><div class="road" aria-hidden="true"></div><div id="cards"></div></div></section>
+<nav class="selectors" id="selectors" aria-label="Pilih komponen"></nav>
+<div class="hint">PILIH KOMPONEN · KLIK LAGI UNTUK MELIHAT INFORMASI · GESER KIRI / KANAN</div>
+<footer class="footer"><span>PROSESOR · RAM · VGA · MOTHERBOARD · SSD · HDD · FAN COOLER</span><span>MEDIA PEMBELAJARAN</span></footer>
+<div class="detail-overlay" id="detailOverlay" aria-hidden="true">
+  <div class="detail-screen">
+    <div class="detail-head">
+      <div class="detail-kicker" id="detailKicker">01 / PROSESOR</div>
+      <button class="detail-close" id="detailClose" type="button" aria-label="Tutup informasi">×</button>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-photo-wrap"><img id="detailImage" alt="Foto komponen"></div>
+      <div class="detail-copy">
+        <div class="card-tag" id="detailTag">CPU · KOMPONEN</div>
+        <h2 class="detail-title" id="detailTitle">Prosesor</h2>
+        <p class="detail-intro" id="detailIntro"></p>
+        <div class="detail-cards">
+          <article class="detail-info-box"><small>APA ITU?</small><h3>Pengertian</h3><p id="detailWhat"></p></article>
+          <article class="detail-info-box"><small>FUNGSI</small><h3>Peran utama</h3><p id="detailFunc"></p></article>
+          <article class="detail-info-box"><small>CARA KERJA</small><h3>Bagaimana bekerja?</h3><p id="detailHow"></p></article>
+          <article class="detail-info-box"><small>GAMPANGNYA</small><h3>Contoh sederhana</h3><p id="detailEasy"></p></article>
+        </div>
+
+        <section class="component-3d" aria-label="Tampilan komponen 3D 360 derajat">
+          <div class="component-3d-head">
+            <div>
+              <div class="component-3d-kicker">INTERACTIVE 3D · 360°</div>
+              <h3 id="component3DTitle">3D · Prosesor</h3>
+            </div>
+            <div class="component-3d-status" id="component3DStatus">MEMUAT ENGINE…</div>
+          </div>
+
+          <div class="component-3d-stage" id="component3DStage">
+            <div class="component-3d-glow"></div>
+            <div class="component-3d-viewer" id="component3DViewer"></div>
+            <div class="component-3d-scanline" aria-hidden="true"></div>
+            <div class="component-3d-badge" id="component3DBadge">3D ENGINE · REAL-TIME</div>
+            <div class="component-3d-angle"><span id="component3DAngle">000°</span><small>ROTATION</small></div>
+            <div class="component-3d-corner component-3d-corner-a"></div>
+            <div class="component-3d-corner component-3d-corner-b"></div>
+          </div>
+
+          <div class="component-3d-toolbar">
+            <button class="component-3d-btn active" id="component3DAuto" type="button" aria-pressed="true">AUTO ROTATE · ON</button>
+            <button class="component-3d-btn" id="component3DReset" type="button">RESET VIEW</button>
+            <div class="component-3d-hint" id="component3DHint">DRAG · PUTAR 360° &nbsp;•&nbsp; SCROLL / PINCH · ZOOM &nbsp;•&nbsp; RIGHT DRAG · PAN</div>
+          </div>
+        </section>
+
+        <div class="detail-back-note">ESC / × · KEMBALI KE DAFTAR KOMPONEN</div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+<script src="component-3d.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.min.js"></script>
+<script src="script.js" defer></script>
+</body>
+</html>
